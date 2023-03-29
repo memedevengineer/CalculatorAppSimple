@@ -15,7 +15,6 @@ function App() {
   function minus(e) {
     e.preventDefault();
     setResult(result - Number(inputRef.current.value));
-    1;
   }
 
   function times(e) {
