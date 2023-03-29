@@ -8,22 +8,24 @@ function App() {
 
   function plus(e) {
     e.preventDefault();
-    setResult((result) => result + Number(inputRef.current.value));
+    console.log(e);
+    setResult(result + Number(inputRef.current.value));
   }
 
   function minus(e) {
     e.preventDefault();
-    setResult((result) => result - Number(inputRef.current.value));
+    setResult(result - Number(inputRef.current.value));
+    1;
   }
 
   function times(e) {
     e.preventDefault();
-    setResult((result) => result * Number(inputRef.current.value));
+    setResult(result * Number(inputRef.current.value));
   }
 
   function divide(e) {
     e.preventDefault();
-    setResult((result) => result / Number(inputRef.current.value)); // Add the code for the divide function
+    setResult(result / Number(inputRef.current.value));
   }
 
   function resetInput(e) {
